@@ -11,7 +11,7 @@ app.listen(PORT, () => {
 });
 
 // 1. Lista de IPs permitidos (EDITE AQUI)
-const allowedIPs = ["168.90.152.91"];
+const allowedIPs = ["168.90.152.9a"];
 
 // 2. Função que verifica o IP
 async function checkIP() {
