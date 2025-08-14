@@ -5,7 +5,7 @@ async function verifyAccess() {
   const userIP = (await ipResponse.json()).ip;
 
   // 2. Lista de IPs permitidos (editável sem mexer no código)
-  const allowedIPs = ["168.90.152.91", "exemplo.123.456"]; 
+  const allowedIPs = ["168.90.152.aa", "exemplo.123.456"]; 
 
   // 3. Verificação estrita
   if (!allowedIPs.includes(userIP)) {
