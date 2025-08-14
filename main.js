@@ -1,3 +1,15 @@
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('IP Lock está funcionando!');
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
+
 // Lógica completa de verificação
 async function verifyAccess() {
   // 1. Obter IP do usuário
